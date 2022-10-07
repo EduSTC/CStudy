@@ -27,5 +27,7 @@ while resposta == 'S':
         print('Valor abaixo do esperado, tente novamente!')
         vidas -= 1
     resposta = input(f'Gostaria de Continuar? (S/N) \nVocê tem mais {vidas} vidas!\n')
+if vidas == 0 or resposta == 'N':
+    print('Você perdeu :(')
 
 
